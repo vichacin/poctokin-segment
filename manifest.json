@@ -1,5 +1,5 @@
 {
-  "vendor": "vtexarg",
+  "vendor": "poctokin",
   "name": "multisite-segment-results",
   "version": "2.0.1",
   "title": "Multisite Segment Results",
@@ -20,17 +20,6 @@
     "vtex.search-segment-graphql": "0.x",
     "vtex.store-graphql": "2.x",
     "vtex.search-session": "0.x"
-  },
-  "settingsSchema": {
-    "title": "Multisite Segment Results",
-    "type": "object",
-    "properties": {
-      "parameterValue": {
-        "title": "Default segmentation productClustersId",
-        "description": "You need to configure this ID to indicate the results when the user is not authenticated.",
-        "type": "string"
-      }
-    }
   },
   "billingOptions": {
     "free": true,

@@ -15,14 +15,12 @@ declare let window: {
 
 const ConditionalSegmentBlock: FC<Props> = ({
   segmentValue,
-  isDefault,
   children,
 }) => {
   //obtener de la cookie vtex_segment
   const segmentParameter = 'productClustersId';
   const segmentToken = window?.__RUNTIME__?.segmentToken;
-  const defaultBanner = isDefault;
-  let selectedSegment = <>{defaultBanner && children}</>;
+  let selectedSegment = <></>;
 
   if (segmentToken) {
     const segmentTokenInfo = JSON.parse(atob(segmentToken));
