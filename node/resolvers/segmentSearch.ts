@@ -12,7 +12,6 @@ export const queries = {
       const key = 'productClusterIds'
       const userEmail = args?.userEmail
 
-
       if (userEmail === 'melisa.alvarezteran@vtex.com.br') {
         // Kiosko con Helados
         return [
@@ -24,8 +23,8 @@ export const queries = {
       } else if (userEmail === 'esteban.degaetano@vtex.com.br') {
         // Kiosko sin Helados
         return [
-          { key: key, value: '167' },
           { key: key, value: '168' },
+          { key: key, value: '167' },
           { key: key, value: '170' },
           { key: key, value: '174' }
         ]
