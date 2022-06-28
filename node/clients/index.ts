@@ -1,4 +1,5 @@
 import { ClientsConfig, IOClients } from '@vtex/api'
+import MasterDataClient from './masterDataClient'
 
 const MEDIUM_TIMEOUT_MS = 2 * 1000
 
@@ -7,6 +8,9 @@ export class Clients extends IOClients {
   // public get myClient(): ClientType {
   //   return this.getOrSet('myClient', ClientType)
   // }
+  public get masterDataClient() {
+    return this.getOrSet('masterDataClient', MasterDataClient)
+  }
 }
 
 export const clients: ClientsConfig<Clients> = {
